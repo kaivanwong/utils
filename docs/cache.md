@@ -22,7 +22,7 @@ interface CacheOptions {
   template: boolean
   // The default value is false, conversational storage
   delete: boolean
-  // Default value, that is, a return value that is not cached
+  // Read the default value of the cache
   default?: unknown
   // Template Parameters - Remarks
   desc?: string
