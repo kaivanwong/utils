@@ -26,8 +26,8 @@ setCache('key','save-data')
 
 |                       |                                           |
 | --------------------- | ----------------------------------------- |
-| [cache](docs/cache)   | A general caching method based on storage |
-| [regexp](docs/regexp) | Summary of common regular expressions     |
+| [cache](docs/cache.md)   | A general caching method based on storage |
+| [regexp](docs/regexp.md) | Summary of common regular expressions     |
 
 ## License
 
