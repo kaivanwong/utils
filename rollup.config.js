@@ -6,7 +6,7 @@ import json from '@rollup/plugin-json'
 
 export default {
   input: './src/index.ts',
-  external: ['lodash'],
+  external: ['axios'],
   output: [
     { format: 'es', file: 'dist/index.esm.js', sourcemap: true },
     { format: 'cjs', file: 'dist/index.cjs.js', sourcemap: true },
