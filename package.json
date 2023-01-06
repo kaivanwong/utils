@@ -1,6 +1,6 @@
 {
   "name": "@kaivanwong/utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "JavaScript/TypeScript utils commonly used by @kaivanwong",
   "author": "Kaivan Wong <kaivanwong@outlook.com>",
   "keywords": [
@@ -19,7 +19,7 @@
   "packageManager": "pnpm@7.21.0",
   "type": "module",
   "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
+  "module": "./dist/index.esm",
   "types": "./dist/types/index.d.ts",
   "files": [
     "dist",
