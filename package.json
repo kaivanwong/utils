@@ -19,7 +19,7 @@
   "packageManager": "pnpm@7.21.0",
   "type": "module",
   "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
+  "module": "./dist/index.esm",
   "types": "./dist/types/index.d.ts",
   "files": [
     "dist",
