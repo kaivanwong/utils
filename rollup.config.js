@@ -10,6 +10,7 @@ export default {
   output: [
     { format: 'es', file: 'dist/index.esm.js', sourcemap: true },
     { format: 'cjs', file: 'dist/index.cjs.js', sourcemap: true },
+    { format: 'umd', file: 'dist/index.min.js', sourcemap: true, name: 'index' },
   ],
   plugins: [
     resolve(),

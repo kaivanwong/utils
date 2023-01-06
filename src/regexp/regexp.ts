@@ -2,40 +2,40 @@ import type { Reg } from './types'
 
 /**
  * @name USERNAME
- * @description User name. The value must start with a letter and contain 6 to 16 characters
+ * @description Length 6 to 16
  */
 export const USERNAME: Reg = /^[a-zA-Z][a-zA-Z0-9_]{5,15}$/
 
 /**
  * @name PASSWORD_NORMAL
- * @description Password. It must start with a letter and contain 6 to 16 letters, digits, and underscores (_)
+ * @description Length 6 to 16, consisting of letters, numbers, and "_"
  */
 export const PASSWORD_NORMAL: Reg = /^[a-zA-Z]\w{5,15}$/
 
 /**
  * @name PASSWORD_STRICT
- * @description Strict password. The password must contain a combination of uppercase letters, lowercase letters, and digits and cannot contain special characters. The password is a string of 8 to 16 characters
+ * @description Length 8 to 16, contains upper and lower case letters and numbers
  */
 export const PASSWORD_STRICT: Reg
   = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{7,15}$/
 
 /**
  * @name PASSWORD_STRICT_SYMBOL
- * @description Strict password. The password must contain a combination of uppercase letters, lowercase letters, and digits and can contain special characters. The password is a string of 8 to 16 characters
+ * @description Length 8 to 16, contains upper and lower case letters, numbers, and special characters
  */
 export const PASSWORD_STRICT_SYMBOL: Reg
   = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,15}$/
 
 /**
  * @name EMAIL
- * @description Generic email address
+ * @description E-mail Address
  */
 export const EMAIL: Reg
   = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/
 
 /**
  * @name MOBILE
- * @description Universal phone number, 3-4 digit area code, 7-8 digit on-air number, 1-4 digit extension number
+ * @description Mobile phone number, 3-4 digit area code, 7-8 digit on-air number, 1-4 digit extension number
  */
 export const MOBILE: Reg
   = /((\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$)/
@@ -68,7 +68,7 @@ export const QQ_ACOUNT: Reg = /^[1-9][0-9]{4,10}$/
 
 /**
  * @name WECHAT_ACOUNT
- * @description Wechat credit account name (6-20 digits, starting with a letter, letter, number, minus sign, underscore)
+ * @description Wechat Account (China)
  */
 export const WECHAT_ACOUNT: Reg = /^[a-zA-Z]([-_a-zA-Z0-9]{5,19})+$/
 
@@ -87,7 +87,7 @@ export const DATE_TIME: Reg
 
 /**
  * @name NUMBER_MONEY
- * @description A non-zero number with a maximum of two decimal places.
+ * @description Nonzero, two decimal places
  */
 export const NUMBER_MONEY: Reg = /^([1-9][0-9]*)+(\.[0-9]{1,2})?$/
 
@@ -111,7 +111,7 @@ export const POSTAL_CODE: Reg = /^\d{6}$/
 
 /**
  * @name IPV4
- * @description IPv4
+ * @description IPv4 Address
  */
 export const IPV4: Reg
   = /^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/
@@ -204,13 +204,13 @@ export const IS_CHINESE: Reg = /[\u4E00-\u9FA5]/
 
 /**
  * @name URL
- * @description Url address
+ * @description Url Address
  */
 export const URL: Reg
   = /^((https?|ftp|file):\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
 
 /**
- * @name
+ * @name RGB
  * @description Hexadecimal color
  */
 export const RGB: Reg = /^#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/
