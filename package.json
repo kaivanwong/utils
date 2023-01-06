@@ -2,7 +2,7 @@
   "name": "@kaivanwong/utils",
   "version": "0.0.1",
   "description": "JavaScript/TypeScript utils commonly used by @kaivanwong",
-  "author": "Kaivan Wong",
+  "author": "Kaivan Wong <kaivanwong@outlook.com>",
   "keywords": [
     "kaivanwong",
     "utils"
@@ -16,7 +16,6 @@
   "bugs": {
     "url": "https://github.com/kaivanwong/utils/issues"
   },
-  "private": true,
   "packageManager": "pnpm@7.21.0",
   "type": "module",
   "main": "./dist/index.cjs",
