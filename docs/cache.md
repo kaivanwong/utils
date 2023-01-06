@@ -70,3 +70,7 @@ import { removeCache } from '@kaivanwong/utils'
 
 removeCache('key')
 ```
+
+## License
+
+[MIT licensed](./LICENSE) © 2022-PRESENT [Kaivan Wong](https://github.com/kaivanwong)

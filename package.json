@@ -1,6 +1,6 @@
 {
   "name": "@kaivanwong/utils",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "JavaScript/TypeScript utils commonly used by @kaivanwong",
   "author": "Kaivan Wong <kaivanwong@outlook.com>",
   "keywords": [
