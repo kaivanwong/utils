@@ -36,6 +36,7 @@ setCache('key','save-data')
 | ------------------------ | ----------------------------------------- |
 | [cache](docs/cache.md)   | A general caching method based on storage |
 | [regexp](docs/regexp.md) | Summary of common regular expressions     |
+| [theme](docs/theme.md)   | Some useful methods for building themes   |
 
 More tools are being integrated...
 
