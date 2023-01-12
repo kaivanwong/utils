@@ -32,11 +32,12 @@ setCache('key','save-data')
 
 ## Utils Found Here
 
-| Name                     | Description                               |
-| ------------------------ | ----------------------------------------- |
-| [cache](docs/cache.md)   | A general caching method based on storage |
-| [regexp](docs/regexp.md) | Summary of common regular expressions     |
-| [theme](docs/theme.md)   | Some useful methods for building themes   |
+| Name                         | Description                                   |
+| ---------------------------- | --------------------------------------------- |
+| [cache](docs/cache.md)       | A general caching method based on storage     |
+| [regexp](docs/regexp.md)     | Summary of common regular expressions         |
+| [theme](docs/theme.md)       | Some useful methods for building themes       |
+| [validate](docs/validate.md) | A simple validate methods for from validation |
 
 More tools are being integrated...
 
