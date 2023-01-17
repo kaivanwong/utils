@@ -2,6 +2,7 @@
   "name": "@kaivanwong/utils",
   "type": "module",
   "version": "0.3.0",
+  "packageManager": "pnpm@7.21.0",
   "description": "JavaScript/TypeScript utils commonly used by @kaivanwong",
   "author": "Kaivan Wong <kaivanwong@outlook.com>",
   "license": "MIT",
@@ -26,7 +27,6 @@
     "README.md",
     "LICENSE"
   ],
-  "packageManager": "pnpm@7.21.0",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",

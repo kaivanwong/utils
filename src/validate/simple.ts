@@ -4,7 +4,7 @@ import type { IObject, SimpleValidateResult } from './types'
  * @name simpleValidate
  * @description Simple form validation
  * @param type
- * @return true | error
+ * @return true | error 
  */
 export const simpleValidate = (rules: IObject, form: IObject): Promise<SimpleValidateResult> => {
   return new Promise((resolve) => {
