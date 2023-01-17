@@ -1,1 +1,1 @@
-export type Reg = RegExp;
+export type Reg = RegExp

@@ -57,7 +57,7 @@ export const getCache = (key: string, options?: CacheOptions): any => {
   if (options.delete)
     cacheType(options.type).removeItem(key)
 
-  return data === null || typeof data === 'undefined'
+  return (data === null || typeof data === 'undefined')
     ? options.default
       ? options.default
       : null
