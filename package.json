@@ -1,7 +1,7 @@
 {
   "name": "@kaivanwong/utils",
   "type": "module",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "private": true,
   "packageManager": "pnpm@7.21.0",
   "description": "JavaScript/TypeScript utils commonly used by @kaivanwong",
