@@ -34,7 +34,7 @@
     "build": "rollup -c ./rollup.config.js"
   },
   "devDependencies": {
-    "@kaivanwong/eslint-config": "^0.13.0",
+    "@kaivanwong/eslint-config": "^0.13.9",
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.0.1",
@@ -43,7 +43,7 @@
     "eslint": "^8.34.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
-    "rollup": "^3.17.1",
+    "rollup": "^3.17.2",
     "tslib": "^2.5.0",
     "typescript": "^4.9.5"
   },
