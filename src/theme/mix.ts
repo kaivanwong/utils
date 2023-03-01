@@ -1,9 +1,9 @@
 /**
  * @name colorMix
- * @param color1
- * @param color2
- * @param weight
  * @description Color mixing method
+ * @param color1 Main color
+ * @param color2 Mix color
+ * @param weight Mixability
  * @return hex color
  */
 export const colorMix = (

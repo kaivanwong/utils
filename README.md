@@ -14,7 +14,7 @@ pnpm add @kaivanwong/utils
 npm install @kaivanwong/utils --s
 ```
 
-You can also choose cdn to import, add this line to your index.html and play
+You can also choose CDN to import, add this line to your index.html and play
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/@kaivanwong/utils/index.min.js"></script>
