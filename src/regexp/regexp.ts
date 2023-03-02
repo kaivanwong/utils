@@ -2,13 +2,13 @@ import type { Reg } from './types'
 
 /**
  * @name USERNAME
- * @description Length 6 to 16
+ * @description Length 4 to 16
  */
-export const USERNAME: Reg = /^[a-zA-Z][a-zA-Z0-9_]{5,15}$/
+export const USERNAME: Reg = /^[a-zA-Z][a-zA-Z0-9_]{3,15}$/
 
 /**
  * @name PASSWORD_NORMAL
- * @description Length 6 to 16, consisting of letters, numbers, and "_"
+ * @description Length 6 to 16, begins with a letter, including letters, numbers, and "_"
  */
 export const PASSWORD_NORMAL: Reg = /^[a-zA-Z]\w{5,15}$/
 
