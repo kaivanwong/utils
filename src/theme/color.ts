@@ -30,12 +30,12 @@ export const colorMix = (
 /**
  * @name getLevelColor
  * @description Gets the level of a color
- * @param color Hex Color, such as #ea3a72
+ * @param color Hex Color, such as #b90b0b
  * @param level Color Level, such as 0.1
  * @param type Mix type, dark or light
  * @returns
  */
-export const mixColor = (color: string, level: number, type: string) => {
+export const getLevelColor = (color: string, level: number, type: string) => {
   color = color.replace('#', '')
   let red = parseInt(color.slice(0, 2), 16)
   let green = parseInt(color.slice(2, 4), 16)

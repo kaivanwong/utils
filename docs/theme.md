@@ -37,6 +37,16 @@ The results generated are as follows
 | --theme-color-primary-light-9 | #f8e7e7 |
 | --theme-color-primary-dark-2  | #940909 |
 
+Facing the general scene, the method of obtaining color ladder is provided
+
+```javascript
+import { getLevelColor } from '@kaivanwong/utils'
+
+const isDark = false // Support dark mode
+
+getLevelColor('#b90b0b','0.1', isDark)
+```
+
 ## License
 
 [MIT licensed](./LICENSE) © 2022-PRESENT [Kaivan Wong](https://github.com/kaivanwong)
