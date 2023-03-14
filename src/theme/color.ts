@@ -28,31 +28,31 @@ export const colorMix = (
 }
 
 /**
- * @name getLevelColor
- * @description Gets the level of a color
+ * @name getPercentColor
+ * @description Gets the percent of a color
  * @param color Hex Color, such as #b90b0b
- * @param level Color Level, such as 0.1
+ * @param percent Color Percent, such as 0.1
  * @param type Mix type, dark or light
  * @returns
  */
-export const getLevelColor = (color: string, level: number, type: string) => {
+export const getPercentColor = (color: string, percent: number, type: string) => {
   color = color.replace('#', '')
   let red = parseInt(color.slice(0, 2), 16)
   let green = parseInt(color.slice(2, 4), 16)
   let blue = parseInt(color.slice(4, 6), 16)
 
   if (type === 'light') {
-    if (level === 0)
+    if (percent === 0)
       return [red, green, blue].join(',')
 
-    red += Math.round(level * (255 - red))
-    green += Math.round(level * (255 - green))
-    blue += Math.round(level * (255 - blue))
+    red += Math.round(percent * (255 - red))
+    green += Math.round(percent * (255 - green))
+    blue += Math.round(percent * (255 - blue))
   }
   else if (type === 'dark') {
-    red = Math.round((1 - level) * red)
-    green = Math.round((1 - level) * green)
-    blue = Math.round((1 - level) * blue)
+    red = Math.round((1 - percent) * red)
+    green = Math.round((1 - percent) * green)
+    blue = Math.round((1 - percent) * blue)
   }
 
   return `#${red.toString(16)}${green.toString(16)}${blue.toString(16)}`

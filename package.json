@@ -1,7 +1,7 @@
 {
   "name": "@kaivanwong/utils",
   "type": "module",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "packageManager": "pnpm@7.25.0",
   "description": "JavaScript/TypeScript utils commonly used by @kaivanwong",
   "author": "Kaivan Wong <kaivanwong@outlook.com>",
