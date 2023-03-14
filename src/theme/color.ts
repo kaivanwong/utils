@@ -26,34 +26,3 @@ export const colorMix = (
   const _b = (`0${(b || 0).toString(16)}`).slice(-2)
   return `#${_r}${_g}${_b}`
 }
-
-/**
- * @name getPercentColor
- * @description Gets the percent of a color
- * @param color Hex Color, such as #b90b0b
- * @param percent Color Percent, such as 0.1
- * @param type Mix type, dark or light
- * @returns
- */
-export const getPercentColor = (color: string, percent: number, type: string) => {
-  color = color.replace('#', '')
-  let red = parseInt(color.slice(0, 2), 16)
-  let green = parseInt(color.slice(2, 4), 16)
-  let blue = parseInt(color.slice(4, 6), 16)
-
-  if (type === 'light') {
-    if (percent === 0)
-      return [red, green, blue].join(',')
-
-    red += Math.round(percent * (255 - red))
-    green += Math.round(percent * (255 - green))
-    blue += Math.round(percent * (255 - blue))
-  }
-  else if (type === 'dark') {
-    red = Math.round((1 - percent) * red)
-    green = Math.round((1 - percent) * green)
-    blue = Math.round((1 - percent) * blue)
-  }
-
-  return `#${red.toString(16)}${green.toString(16)}${blue.toString(16)}`
-}
